@@ -137,7 +137,7 @@ export default function TurfBookingApp() {
                 {slots.map((slot) => (
                   <button
                     key={slot}
-                  
+                  onClick={() => setSelectedSlot(slot)}
                   className={`p-3 rounded-2xl border font-semibold transition-all ${
                       selectedSlot === slot
                         ? "bg-green-600 text-white border-green-600"

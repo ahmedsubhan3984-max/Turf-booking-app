@@ -69,9 +69,9 @@ export default function TurfBookingApp() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-100 to-white p-6 text-gray-800">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-5xl font-extrabold text-green-700 mb-3">
+          <h1 className="text-3xl font-extrabold text-green-700 mb-3">
             Turf Slot Booking
           </h1>
           <p className="text-lg text-gray-600">
@@ -137,8 +137,8 @@ export default function TurfBookingApp() {
                 {slots.map((slot) => (
                   <button
                     key={slot}
-                    onClick={() => setSelectedSlot(slot)}
-                    className={`p-3 rounded-2xl border font-semibold transition-all ${
+                  
+                  className={`p-3 rounded-2xl border font-semibold transition-all ${
                       selectedSlot === slot
                         ? "bg-green-600 text-white border-green-600"
                         : "bg-gray-100 hover:bg-green-100"
